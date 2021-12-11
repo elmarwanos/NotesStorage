@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <h1>Add a Coin</h1>
+
+    <form action="/addCoin" method="POST">
+        <input type="file" name="img-front" id="img-front">
+        <input type="file" name="img-back" id="img-back">
+
+        <br>
+        <label>
+            Period
+            <input type="text" name="Period" id="period-input">
+        </label>
+        <br>
+        <label>
+            KM#
+            <input type="text" name="KM" id="KM-input">
+            <!-- Check for hexadecimal -->
+        </label>
+        <br>
+        <label>
+            Year
+            <input type="number" name="Year" id="year-input">
+        </label>
+        <br>
+        <label>
+            Denomination
+            <input type="text" name="Denomination" id="denomination-input">
+        </label>
+        <br>
+        <label>
+            Type
+            <input type="text" name="Type" id="type-input">
+        </label>
+        <br>
+        <label>
+            Mintage
+            <input type="number" step="any" name="Mintage" id="mintage-input">
+        </label>
+        <br>
+        <label>
+            F quantity
+            <input type="number" name="F-q" id="f-input">
+        </label>
+        <br>
+        <label>
+            VF quantity
+            <input type="number" name="VF-q" id="vf-input">
+        </label>
+        <br>
+        <label>
+            XF quantity
+            <input type="number" name="XF-q" id="xf-input">
+        </label>
+        <br>
+        <label>
+            UNC quantity
+            <input type="number" name="UNC-q" id="unc-input">
+        </label>
+        <br>
+        <label>
+            Cost/Unit
+            <input type="number" step="any" name="cost/unit" id="cost/unit-input">
+        </label>
+        <!-- Compute Q -->
+        <!-- Compute Total -->
+
+        <br>
+        <label>
+            F price
+            <input type="number" step="any" name="F-p" id="f-input">
+        </label>
+        <br>
+        <label>
+            VF price
+            <input type="number" step="any" name="VF-p" id="vf-input">
+        </label>
+        <br>
+        <label>
+            XF price
+            <input type="number" step="any" name="XF-p" id="xf-input">
+        </label>
+        <br>
+        <label>
+            UNC price
+            <input type="number" step="any" name="UNC-p" id="unc-input">
+        </label>
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear All</button>
+
+
+
+    </form>
+
+</body>
+
+</html>
